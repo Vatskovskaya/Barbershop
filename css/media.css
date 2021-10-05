@@ -1,0 +1,35 @@
+/*Full screenn - 1024px - обычные стили*/ 
+@media (max-width: 1240px){
+    .container{
+        max-width: 1000px;
+        padding: 0 15px;
+    }
+}
+/*1024px - 768px - @media (max-width: 1024px) {*/
+ @media (max-width: 1024px){
+    .container{
+        max-width: 900px;
+        padding: 0 15px;
+    }
+}
+/*768px - 480px - @media (max-width: 768px) */
+@media (max-width: 900px){
+    .container{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 768px){
+} 
+@media (max-width: 530px){
+    .tour__table{
+        width: 430px;
+    }
+    .tour__table tr{
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+/*480px - 320px - @media (max-width: 480px)*/
+@media (max-width: 480px){
+}

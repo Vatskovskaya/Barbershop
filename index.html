@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/baa65b8b7f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+    <title>Borodinski</title>
+</head>
+<body>
+	<main>
+		<header class="page-header">
+			<div class="container">
+				<nav class="header__navigation">
+					<img width="317" height="155" class="big-logo" src="img/logo.png" alt="Логотип барбершопа «Бородинский»">
+					<ul class="header__navigation-list">
+						<a href=""><li>Информация</li></a>
+						<a href=""><li>Новости</li></a>
+						<a href=""><li>Прайс-Лист</li></a>
+						<a href=""><li>Магазин</li></a>
+						<a href=""><li>Контакты</li></a>
+					</ul>
+					<ul class="header__navigation__login">
+						<a href=""><li>Вход</li></a>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="advantages">
+			<div class="container">
+				<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+				<div class="advantages__list">
+					<div class="advantages__item">
+						<h2>Быстро</h2>
+						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+					</div>
+					<div class="advantages__item">
+						<h2>Круто</h2>
+						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+					</div>
+					<div class="advantages__item">
+						<h2>Дорого</h2>
+						<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="white-section">
+			<div class="container white-wrapper">
+				<section class="news left-part">
+					<h2>Новости</h2>
+					<div class="news__item">
+						<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+						<time datetime="2021-01-11">11 Января</time>
+					</div>
+					<div class="news__item">
+						<p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+						<time datetime="2021-01-18">18 Января</time>
+					</div>
+					<a href="#" class="btn">Все новости</a>
+				</section>
+				<section class="galery right-part">
+					<h2>Фотогаререя</h2>
+					<div class="photo-slide">
+						<a href="#"><img src="img/slider-img.jpg" alt=""></a>
+						<a href="#"><img src="img/slider-img.jpg" alt=""></a>
+						<a href="#"><img src="img/slider-img.jpg" alt=""></a>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="white-section">
+			<div class="container white-wrapper">
+				<section class="contact-info left-part">
+					<h2>Контактная Информация</h2>
+					<p>Барбершоп «бородинский»</p>
+					<a class="info-adress" href="https://goo.gl/maps/iiKQgAPSR4AfYghE9">Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8</a>
+					<a class="contact-phone info-adress" href="tel:+7(495)6660266">Телефон: +7 (495) 666-02-66</a>
+					<p>Время работы:</p>
+					<p>Пн—пт: с 10:00 до 22:00</p>
+					<p class="weekend-time">Сб—вс: с 10:00 до 19:00</p>
+					<div class="btn-container">
+						<a href="#" class="btn">как проехать</a>
+						<a href="#" class="btn">Обратная связь</a>
+					</div>	
+				</section>
+				<section class="appointment right-part">
+					<h2>Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<form action="#" class="contact-form">
+						<div class="contact-form__item">
+							<label for="date">Дата</label>
+							<input type="date" name="date" id="date" value="2017-08-10">
+						</div>
+						<div class="contact-form__item">
+							<label for="time">Время</label>
+							<input type="time" name="visit-time" id="time" value="10:00">
+						</div>
+						<div class="contact-form__item">
+							<label for="name">Ваше имя</label>
+							<input type="text" name="name" id="name" placeholder="Борода">
+						</div>
+						<div class="contact-form__item">
+							<label for="tel">Телефон</label>
+							<input type="tel" name="phone-number" id="tel" placeholder="+7 123 456-78-90">
+						</div>
+						<input type="submit" class="btn">
+					</form>
+				</section>
+			</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
