@@ -91,15 +91,19 @@
         transition: 0.3s;
     }
     .header__burger::before{
+        content: "";
         top: 0;
     }
     .header__burger::after{
+        content: "";
         bottom: 0;
     }
     .header__burger.active::after{
+        content: "";
         transform: rotate(45deg) translate(-12px);
     }
     .header__burger.active::before{
+        content: "";
         transform: rotate(-45deg) translate(-12px);
     }
     .header__burger.active span{
