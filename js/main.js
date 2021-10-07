@@ -5,6 +5,17 @@ $(document).ready(function(){
     $('.photo-slide').slick({
     arrows: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+      responsive:[
+        {
+          breakpoint: 480,
+          settings: {
+            dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+    ]
     });
   });
