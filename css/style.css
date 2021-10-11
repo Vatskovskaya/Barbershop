@@ -63,8 +63,8 @@ p,
 .header__navigation{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
-
 .header__navigation-list li,
 .header__navigation__login{
 	padding-top: 22px;
@@ -74,17 +74,18 @@ p,
 }
 .header__navigation-list{
 	display: flex;
-	/* column-gap: 35px; */
 	list-style: none;
 }
 .header__navigation__login{
 	list-style: none;
 	position: relative;
 }
-
 .header__navigation-list li:hover,
 .header__navigation__login:hover{
 	background-color: #242424;
+}
+.header__navigation__login img{
+	margin-right: 10px;
 }
 .big-logo{
 	position: absolute;
@@ -92,7 +93,13 @@ p,
 	top: 120px;
 	transform: translateX(-50%);
 }
-
+.logo-responsive{
+	display: none;
+	/* visibility: hidden; */
+}
+.header__burger{
+	display: none;
+}
 /* -----------------------------------advantages Section----------------------------------------------- */
 .advantages{
 	padding-top: 250px;
@@ -128,7 +135,6 @@ p,
 .white-section{
 	margin-bottom: 33px;
 }
-
 .white-wrapper{
 	background-image: url(../img/line.png), url(../img/white-bg.jpg);
 	background-repeat: no-repeat, no-repeat ;
