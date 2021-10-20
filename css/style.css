@@ -24,8 +24,15 @@ time{
 	text-transform: lowercase;
 }
 .visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
 	font-size: 1px;
-	opacity: 0;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 .container{
 	max-width: 940px;
@@ -59,6 +66,86 @@ p,
 .btn:hover,
 .btn:focus{
 	background: #673d15;
+}
+/* ------------ CheckBox -------------------- */
+.check{
+	position: relative;
+	padding-left: 27px;
+	display: block;
+}
+.check__input{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	font-size: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.check__box{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	box-shadow: 0 0 0 2px #000;
+	width: 16px;
+	height: 16px;
+}
+/* Checked */
+.check__input:checked + .check__box{
+	background-image: url(../img/icons/cross.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Focused */
+.check__input:focus + .check__box{
+	box-shadow: 
+		0 0 0 2px #000,
+		0 0 0 4px #673d15;
+}
+/* ------------------------ Radio input ------------------------ */
+.custom-radio{
+	position: relative;
+	padding-left: 27px;
+	display: block;
+}
+.radio__input{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	font-size: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.radio__box{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	box-shadow: 0 0 0 2px #000;
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+}
+/* Checked */
+.radio__input:checked + .radio__box{
+	background-image: url(../img/icons/dott.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Focused */
+.radio__input:focus + .radio__box{
+	box-shadow: 
+		0 0 0 2px #000,
+		0 0 0 4px #673d15;
+}
+.radio__text{
+	display: inline;
 }
 /*--------------- Header Section ---------------*/
 .page-header{
@@ -353,8 +440,8 @@ body .logo-responsive{
 	width: 100%;
 }
 
-/* ------------------Shop Page ------------------------------*/
-.shop{
+/* ------------------Inner Page ---------------------*/
+.inner-page{
 	background-image: url(../img/white-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -362,6 +449,7 @@ body .logo-responsive{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+/* ---------------------------------------------------Shop Page ----------------------------*/
 .shop h2{
 	margin-bottom: 15px;
 }
@@ -438,6 +526,11 @@ body .logo-responsive{
 .shop__products__items{
 	background-color: #fff;
 	box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.356);
+}
+.shop__products__items:hover{
+	box-shadow:
+		1px 1px 7px 1px rgba(0, 0, 0, 0.356),
+	 	2px 2px 7px 2px rgb(151, 151, 151);
 }
 .shop__products__items img{
 	display: block;
