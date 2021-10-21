@@ -23,6 +23,9 @@ img{
 time{
 	text-transform: lowercase;
 }
+ul{
+	list-style: none;
+}
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -583,4 +586,83 @@ body .logo-responsive{
 .shop .pages a:active{
 	color: #000;
 	background-color: #fff;
+}
+
+/* ------------------------Price-list Page--------------------- */
+.price-list__title{
+	text-align: center;
+	position: relative;
+	margin-bottom: 55px;
+}
+.price-list__title::before{
+	content: "";
+	width: 160px;
+	height: 2px;
+	background-color: #000;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+}
+.price-list__title::after{
+	content: "";
+	width: 160px;
+	height: 2px;
+	background-color: #000;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translateY(-50%);
+}
+.price-list__info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.price-list__item{
+	margin-bottom: 50px;
+}
+.price-list__item h3{
+	margin-bottom: 25px;
+}
+.price-list__item__product-list li{
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+.price-list__item__product-list li::before{
+	content: "";
+	background-color: #000;
+	width: 6px;
+	height: 6px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%) rotate(45deg);
+}
+.price-list__item__table{
+	border: 2px solid #000;
+	border-collapse: collapse;
+	width: 460px;
+}
+.price-list__item__table tr{
+	height: 39px;
+}
+.price-list__item__table td{
+	border: 2px solid #000;
+}
+.services{
+	padding-left: 17px;
+	width: 50%;
+}
+.price{
+	text-align: center;
+	width: 50%;
+}
+.price-list__about-us-box{
+	display: flex;
+	column-gap: 90px;
 }
