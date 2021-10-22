@@ -51,6 +51,36 @@
     .right-part {
         flex-basis: 43%;
     }
+    /* -----------------Prise-List Page----------- */
+    .inner-page{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .price-list__item__table{
+        max-width: 350px;
+    }
+    .price-list__title::before{
+        content: "";
+        width: 160px;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .price-list__title::after{
+        content: "";
+        width: 160px;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
 }
 @media (max-width: 768px){
     h2, h3, h4,
@@ -275,6 +305,44 @@
     .footer__contact {
         align-items: center;
     }
+    /* ---------------------Inner Page------------ */
+    .inner-page{
+        padding-top: 100px;
+    }
+    /* -----------------Prise-List Page----------- */
+    .price-list br{
+        display: none;
+    }
+    .price-list__about-us-box > p{
+        margin-bottom: 10px;
+    }
+    .price-list__item__table{
+        max-width: 320px;
+    }
+    .price-list__about-us-box {
+        column-gap: 60px;
+    }
+    .price-list__title{
+        font-size: 24px;
+    }
+    .price-list__title::before{
+        content: "";
+        width: 300px;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .price-list__title::after{
+        content: none;
+    }
+    .price-list__about-us-box{
+        flex-direction: column;
+    }
+   
 }
 /*480px - 320px - @media (max-width: 480px)*/
 @media (max-width: 480px){
@@ -300,6 +368,11 @@
         height: 7px;
         bottom: -12px;
     }
-
-
+    /* ---------------------Inner Page------------ */
+    .inner-page{
+        padding-top: 75px;
+    }
+    .price-list__item__table{
+        max-width: 300px;
+    }
 }
