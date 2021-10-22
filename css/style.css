@@ -50,7 +50,7 @@ h3{
 	font-size: 24px;
 	line-height: 30px;
 }
-p,
+p, li, span,
 .subtitle{
 	font-size: 14px;
 	line-height: 24px;
@@ -671,3 +671,51 @@ body .logo-responsive{
 }
 
 /* ----------------------Shop Item Page -----------------------*/
+.shop-item__wrapper{
+	display: flex;
+	column-gap: 80px;
+}
+.item-galery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 20px;
+
+	flex-basis: 50%;
+}
+.item-galery img{
+	box-shadow: 0 0 10px 1px rgba(36, 36, 36, 0.404);
+}
+.item-text{
+	flex-basis: 40%;
+}
+.item-text p{
+	margin-bottom: 35px;
+}
+.avaible{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.avendor-code{
+	padding-left: 45%;
+	color: #aeaeae;
+}
+.shop-item__price{
+	display: flex;
+	margin-bottom: 60px;
+}
+.shop-item__price span{
+	background-color: #e5e5e5;
+	
+	padding: 14px;
+	width: 109px;
+	text-align: center;
+}
+.shop-item__price .btn{
+	max-width: 80px;
+    width: 100%;
+    line-height: 20px
+}
+.shop-item-page li{
+	margin-bottom: 0px;
+}
