@@ -23,14 +23,17 @@ $(document).ready(function(){
       slidesToScroll: 1,
       arrows: false,
       fade: true,
+      infinite: false ,
       asNavFor: '.item-galery'
     });
     $('.item-galery').slick({
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       asNavFor: '.slider-for',
-      dots: true,
-      centerMode: false,
+      dots: false,
+      arrows: false,
+
+       centerMode: false,
       focusOnSelect: true
     });
   });

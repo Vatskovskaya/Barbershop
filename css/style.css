@@ -196,7 +196,7 @@ p, li, span,
 .homepage .logo-responsive{
 	display: none;
 }
-body .logo-responsive{
+.inner-header .logo-responsive{
 	display: block;
 }
 .header__burger{
@@ -461,6 +461,7 @@ body .logo-responsive{
 }
 .shop__navigation-list{
 	display: flex;
+	flex-wrap: wrap;
 	column-gap: 40px;
 	list-style: none;
 	margin-bottom: 45px;
@@ -683,6 +684,8 @@ body .logo-responsive{
 
 	flex-basis: 50%;
 }
+
+.slider-for img,
 .item-galery img{
 	box-shadow: 0 0 10px 1px rgba(36, 36, 36, 0.404);
 }
@@ -723,13 +726,15 @@ body .logo-responsive{
 	max-width: 500px;
 }
 .item-galery .item {
-	max-width: 140px;
-	height: 140px;
-	margin-right: 20px;
+	margin: 10px;
 	overflow: hidden;
 }
+.slick-list{
+	
+}
 .slider-for img{
-	max-width: 300px;
+	margin: 10px;
+	/* max-width: 300px; */
 }
 .shop-item__slider{
 	width: 550px;
