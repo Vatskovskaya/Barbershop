@@ -96,8 +96,6 @@
 	    font-size: 24px;
 	    line-height: 24px;
     }
-    
-   
     .logo-responsive {
         margin-right: 50%;
     }
@@ -318,6 +316,28 @@
     /* ---------------------Inner Page------------ */
     .inner-page{
         padding-top: 100px;
+    }
+    /* --------------------Shop Page-------------- */
+    .shop__navigation-list {
+        margin-bottom: 28px;
+    }
+    .filter__aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .shop__section {
+        display: flex;
+        column-gap: 0px;
+        row-gap: 40px;
+        flex-direction: column;
+    }
+    .shop__aside form .btn{
+        margin: 0 auto;
+    }
+    .aside__list-checkbox, .aside__list-radio {
+        margin-bottom: 20px;
     }
     /* -----------------Prise-List Page----------- */
     .price-list br{

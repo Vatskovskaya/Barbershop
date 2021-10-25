@@ -684,7 +684,6 @@ p, li, span,
 
 	flex-basis: 50%;
 }
-
 .slider-for img,
 .item-galery img{
 	box-shadow: 0 0 10px 1px rgba(36, 36, 36, 0.404);
@@ -728,9 +727,6 @@ p, li, span,
 .item-galery .item {
 	margin: 10px;
 	overflow: hidden;
-}
-.slick-list{
-	
 }
 .slider-for img{
 	margin: 10px;
