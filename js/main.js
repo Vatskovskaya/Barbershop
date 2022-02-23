@@ -5,21 +5,13 @@ $(document).ready(function(){
 
   $(document).on('click', '.popup-map__btn', function (event) {
     event.preventDefault();
-    $('.popup-map__wrapper').toggleClass('active');
+    $('.popup__wrapper').toggleClass('active');
     $('.popup-map').toggleClass('active');
-    $('.popup-map__exit').toggleClass('active');
   });
-  $(document).on('click', '.popup-map__wrapper', function (event) {
+  $(document).on('click', '.popup__wrapper', function (event) {
     event.preventDefault();
-    $('.popup-map__wrapper').removeClass('active');
+    $('.popup__wrapper').removeClass('active');
     $('.popup-map').removeClass('active');
-    $('.popup-map__exit').removeClass('active');
-  });
-  $(document).on('click', '.popup-map__exit', function (event) {
-    event.preventDefault();
-    $('.popup-map__wrapper').removeClass('active');
-    $('.popup-map').removeClass('active');
-    $('.popup-map__exit').removeClass('active');
   });
 
   $('.photo-slide').slick({

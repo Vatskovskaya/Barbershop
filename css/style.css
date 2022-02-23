@@ -311,6 +311,7 @@ p, li, span,
 	text-transform: uppercase;
     opacity: 1;
     color: #fff;
+	
 }
 .slick-prev:hover,
 .slick-next:hover{
@@ -321,6 +322,11 @@ p, li, span,
 }
 .slick-next:before{
     content: 'Вперед';
+}
+.slick-prev:focus,.slick-next:focus {
+	outline: 2px solid #000;
+    background: #673d15;
+    border-radius: 2px;
 }
 /* ------------------------------------------White Section 2 -----------------------------------*/
 .contact-info a{
@@ -386,7 +392,20 @@ p, li, span,
 	border: 2px solid #673d15; 
 	outline	:none;
 }
-/* -----------------------------------Footer Section -------------------------*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+
+/* ------------------------Footer Section---------------------*/
 .page-footer{
 	color: #fff;
 	background-color: #262626;
@@ -408,6 +427,12 @@ p, li, span,
 }
 .footer__contact a{
 	margin-bottom: 5px;
+}
+.footer__contact a.popup-map__btn{
+	text-decoration: underline;
+}
+.footer__contact a.popup-map__btn:hover{
+	text-decoration: none;
 }
 .footer__contact .popup-map{
 	text-decoration: underline;
@@ -739,16 +764,13 @@ p, li, span,
 }
 
 /* ----------popup---------- */
-.popup-map__wrapper.active{
+.popup__wrapper.active{
 	display: block;
 }
 .popup-map.active{
 	display: block;
 }
-.popup-map__exit.active{
-	display: block;
-}
-.popup-map__wrapper{
+.popup__wrapper{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -769,11 +791,19 @@ p, li, span,
 	z-index: 2;
 	display: none;
 }
-.popup-map__exit{
+.popup__exit{
 	position: fixed;
 	top: 0;
 	right: 0;
-
 	z-index: 2;
-	display: none;
+
+	background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+	cursor: pointer;
+	transition: 1s;
+}
+.popup__exit:hover{
+	transform: rotate(180deg);
 }
